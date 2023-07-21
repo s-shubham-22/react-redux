@@ -11,5 +11,39 @@ export default {
   plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
+    semi: [
+      'error',
+      'always'
+    ],
+    quotes: [
+      'error',
+      'single'
+    ],
+    indent: [
+      'error',
+      4
+    ],
+    'no-console': 'off',
+    'max-len': [
+      'error',
+      {
+        code: 80
+      }
+    ],
+    'linebreak-style': [
+      'error',
+      'windows'
+    ],
+    'global-require': 'off',
+    camelcase: 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+        optionalDependencies: false,
+        peerDependencies: false,
+        bundledDependencies: false
+      }
+    ]
   },
 }
